@@ -40,7 +40,7 @@ const Project = () => {
   };
 
   return (
-    <div>
+    <>
       <h2 className="head-text">Projects</h2>
       <h2 className="head-text">
         <span style={{ color: "#008080" }}>Latest Works</span>
@@ -107,7 +107,7 @@ const Project = () => {
           </Card>
         ))}
       </motion.div>
-    </div>
+    </>
   );
 };
 
