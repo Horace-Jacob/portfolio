@@ -157,21 +157,43 @@ export const TechSkillData = [
     percentage: 80,
   },
   {
+    title: "C#",
+    percentage: 75,
+  },
+  {
     title: "HTML",
     percentage: 70,
   },
   {
-    title: "C#",
-    percentage: 60,
-  },
-
-  {
     title: "CSS",
-    percentage: 50,
+    percentage: 60,
   },
 ];
 
 export const Experiences = [
+  {
+    image:
+      "https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000",
+    name: "Song API",
+    type: "Freelancer",
+    snippet: "Created Song Api using Firebase and MongoDb",
+    whatToDo: `Developed backend system for creating, updating and deleting songs using Firebase Function and MongoDB.
+    Interact with song api to perform full text search in MongoDb. Debugged the codes and troubleshot production issues.`,
+    language: "NodeJs, Firebase and MongoDb",
+    status: "Present",
+    date: "January-2022 to February-2022",
+  },
+  {
+    image:
+      "https://bernardmarr.com/wp-content/uploads/2021/08/Should-I-Choose-Machine-Learning-or-Big-Data.jpg",
+    name: "Machine Learning",
+    type: "Freelancer",
+    snippet: "Research Football data to perform real-time predictions",
+    whatToDo: `Researched football data and machine learning algorithms and models to perform the predictions with real-time data scores.`,
+    language: "Research Project",
+    status: "Present",
+    date: "March-2022 to April-2022",
+  },
   {
     image:
       "https://en.myanmartechpress.com/wp-content/uploads/2020/01/1-9-800x445-1.jpg",
@@ -184,7 +206,7 @@ export const Experiences = [
     better standard`,
     language: "ReactJs and Redux",
     status: "Finished",
-    date: "6-2-2022 to 7-1-2022",
+    date: "May-2022 to June-2022",
   },
   {
     image:
@@ -196,31 +218,8 @@ export const Experiences = [
     video call system to communicate between doctors and patients. Create frontend design and backend system using blazor and javascript.
     Participate in problem-solving and debugging the codes to work properly. Troubleshooting production issues and maintaining for 
     better standard`,
-    language: "Blazor and Javascript",
+    language: "C# and Javascript",
     status: "Present",
-    date: "7-2-2022 - Present",
-  },
-  {
-    image:
-      "https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000",
-    name: "Song API",
-    type: "Freelancer",
-    snippet: "Created Song Api using Firebase and MongoDb",
-    whatToDo: `Developed backend system for creating, updating and deleting songs using Firebase Function and MongoDB.
-    Interact with song api to perform full text search in MongoDb. Debugged the codes and troubleshot production issues.`,
-    language: "NodeJs, Firebase and MongoDb",
-    status: "Present",
-    date: "8-4-2022 to 9-3-2022",
-  },
-  {
-    image:
-      "https://bernardmarr.com/wp-content/uploads/2021/08/Should-I-Choose-Machine-Learning-or-Big-Data.jpg",
-    name: "Machine Learning",
-    type: "Freelancer",
-    snippet: "Research Football data to perform real-time predictions",
-    whatToDo: `Researched football data and machine learning algorithms and models to perform the predictions with real-time data scores.`,
-    language: "Research Project",
-    status: "Present",
-    date: "8-24-2022 to 9-7-2022",
+    date: "July-2022 - Present",
   },
 ];

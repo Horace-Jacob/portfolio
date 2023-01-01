@@ -74,9 +74,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={() =>
-            openLinkInNewTab(
-              "https://www.linkedin.com/in/horace-jacob-b99a08233/"
-            )
+            openLinkInNewTab("https://www.linkedin.com/in/lwin-oo-naing")
           }
         >
           <AiFillLinkedin size={25} />

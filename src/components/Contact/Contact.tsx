@@ -13,10 +13,13 @@ const Contact = () => {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
+  const [spinnerState, setSpinnerState] = React.useState(false);
+
   const form = React.useRef();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
+    setSpinnerState(true);
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -26,16 +29,23 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setSpinnerState(false);
           console.log(result.text);
           setName("");
           setEmail("");
           setMessage("");
         },
         (error) => {
+          setSpinnerState(false);
           console.log(error.text);
         }
       );
   };
+
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
+  //   console.log("hello world");
+  // };
 
   return (
     <>
@@ -62,13 +72,11 @@ const Contact = () => {
             src={
               "https://www.kindpng.com/picc/m/363-3632986_logo-linkedin-png-rond-transparent-png.png"
             }
-            alt="phone"
+            alt="LinkedIn"
           />
           <div
             onClick={() =>
-              openLinkInNewTab(
-                "https://www.linkedin.com/in/horace-jacob-b99a08233/"
-              )
+              openLinkInNewTab("https://www.linkedin.com/in/lwin-oo-naing")
             }
             className="p-text"
           >
@@ -126,12 +134,18 @@ const Contact = () => {
           />
         </div>
 
-        <input
+        {/* <input
           type={"submit"}
           className="button"
           style={{ backgroundColor: "var(--teal-color)" }}
           value="Send"
-        />
+        /> */}
+        <button
+          className="button"
+          style={{ backgroundColor: "var(--teal-color)" }}
+        >
+          {spinnerState === true ? <p className="loader"></p> : "send"}
+        </button>
       </form>
     </>
   );

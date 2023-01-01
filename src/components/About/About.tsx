@@ -7,6 +7,9 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 
 const About = () => {
+  const openLinkInNewTab = (url: any) => {
+    window.open(url, "_blank", "noopener, noreferrer");
+  };
   return (
     <div>
       <h2 className="head-text">
@@ -39,8 +42,22 @@ const About = () => {
               />
             </span>
           </div>
-          <p className="p-text"></p>
         </motion.div>
+      </div>
+      <div className="certificate-section">
+        <div className="certificate-web-link">
+          <div onClick={() => openLinkInNewTab("https://www.algoexpert.io")}>
+            AlgoExpert.io
+          </div>
+        </div>
+        <div
+          className="certificate-url"
+          onClick={() =>
+            openLinkInNewTab("https://certificate.algoexpert.io/AE-6567496c0d")
+          }
+        >
+          Download Certificate
+        </div>
       </div>
       <Link to="project" spy={true} smooth={true} offset={-70} duration={500}>
         <div className="scroll-down-txt">
