@@ -1,6 +1,7 @@
 import { useEffect, useRef, useImperativeHandle, forwardRef } from "react";
 import gsap from "gsap-trial";
 import "./CursorWrapper.scss";
+import { isMobile } from "react-device-detect";
 
 const Circle = forwardRef(({ size, delay }: any, ref) => {
   const el = useRef();
@@ -46,7 +47,9 @@ export const CursorWrapper = () => {
     }
   };
 
-  return (
+  return isMobile ? (
+    <div></div>
+  ) : (
     <div>
       <Circle size="sm" ref={addCircleRef} delay={0} />
       <Circle size="md" ref={addCircleRef} delay={0.1} />
